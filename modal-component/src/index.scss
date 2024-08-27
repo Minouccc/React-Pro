@@ -1,0 +1,120 @@
+$bg-linear-gradien-red-light: linear-gradient(135deg, #fc4838 0%, #f6346b 100%);
+$bg-linear-gradien-red-dark: linear-gradient(135deg, #fc4838 0%, #f6346b 100%);
+
+/* Modal Top */
+.modal-top {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  background-color: #eee;
+  p {
+    height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  &-closed {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  padding: 10px;
+}
+
+/* Modal Footer */
+.modal-bottom {
+  height: 50px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  &-btn-box {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Dialog */
+.dialog {
+  &-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 0.3s;
+    z-index: 10000;
+  }
+  &-wrap {
+    position: absolute;
+    background-color: #ebebeb;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.mask {
+  background-color: #000000;
+  z-index: 9999;
+}
+
+/* Button */
+.btn {
+  background: linear-gradient(135deg, #fc4838 0%, #f6346b 100%);
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px !important;
+}
+.btn:focus {
+  background: $bg-linear-gradien-red-dark;
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px !important;
+  box-shadow: 0 2px 7px 0 #faa79b;
+}
+.btn:hover {
+  background: $bg-linear-gradien-red-light;
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  margin-left: 20px !important;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 7px 0 #faa79b;
+}
+.btn:disabled {
+  background: #c0c6c6;
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 18px;
+  cursor: not-allowed;
+}
